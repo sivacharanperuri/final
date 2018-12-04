@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+.button {
+    background-color:#2AD3E6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+div.container {
+	text-align: left width:300px;
+	padding: 10px;
+/* 	border: 40px solid pink;
+ */	margin: 0px
+}

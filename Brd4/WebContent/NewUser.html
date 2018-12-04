@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<title>New user Data Entry</title>
+</head>
+<body>
+  <div class="container" align=center>
+	<form action="NewUserDataProces" method="post">
+		Customer Code 
+		    <input type="text" name="Customer_Code" value="Nsbt01"id="Customer_Code" required />
+			 <br> <br>
+		Customer Name 
+		    <input type="text" name="Customer_Name" pattern="[A-Za-z ]*$" title="Invalid name format"value="Nsbt pvt Ltd"id="Customer_Name" required/>
+			<br><br>
+	    Customer Address1
+		  <textarea cols="30" rows="2" name="Customer_Address1"  id="Customer_Address1"required /></textarea>
+		  <br><br> 
+		Customer Address2
+		  <textarea cols="30" rows="2" name="Customer_Address2" id="Customer_Address2" /></textarea>
+		  <br><br> 
+		Customer PinCode 
+		   <input type="number" name="Customer_PinCode"  min="100000" max="999999" value="201307"id="Customer_PinCode" required /><br>
+       <br>
+        Email Address
+		  <input type="email" name="Email_Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}" title="Invalid Email" value="nsbt@nucleussoftware.com"id="Email_Address" required/><br>
+		<br>
+		Contact Number 
+		   <input type="text"  name="Contact_Number" value="9998065432"id="Contact_Number" required/>
+			<br><br>
+	    Primary Contact 
+	       <input type="text" name="Primary_Contact" value="Chitralekha"id="Primary_Contact" />
+	       <br><br>
+        Active Inactive_Flag 
+           <select name="Active_Inactive_Flag" >
+			<option value="A">Active</option>
+			<option value="I">Inactive</option>
+		   </select><br><br> 	
+		Modified Date 
+		     <input type="date" name="Modified_Date" value=""id="Modified_Date" />
+		     <br><br> 
+		Modified By 
+		     <input type="text" name="Modified_By" value=""id="Modified_By" />
+		     <br><br> 
+		Authorized Date 
+		     <input type="date" name="Authorized_Date" value=""id="Authorized_Date" />
+		     <br><br> 
+		Authorized By 
+		     <input type="text" name="Authorized_By" value=""id="Authorized_By" />
+			<br><br>
+       <button class="button" style="border-bottom-color: green"  onclick="myFunction()" >Submit</button>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 15px;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+}
+.dropbtn1{
+	background-color: #EFCB1B;
+	color: white;
+	padding: 15px;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+</style>
+    <p id="demo"></p>
+<script type="text/javascript">
+
+    function GetUser_Id()
+    {
+        
+        var username =(String)session["user_id"];
+
+        return "Hello " + username;
+        
+    }
+    document.getElementById("demo").innerHTML =GetUser_Id();
+    
+</script>
+</head>
+<body "text-align:center">
+<p id="demo"></p>
+<script language="javascript">
+var username = <%=session["user_id"] %>;
+document.getElementById("demo").innerHTML = username;
+</script>
+	<div class="container"align="center">
+		<div class="row" text-align:"left">
+			<h2>Welcome to maker page</h2>
+			<p>Please select the rejection level for file validation.</p>
+			<form action="Fileaccess" style="width: 500px" method="post"
+				enctype="multipart/form-data">
+				Enter the file: <input type="file" name="myFile"><br>
+				<br>
+				<div class="dropdown">
+					<button class="dropbtn">Rejection level</button>
+					<br> <select name="rejectionLevel">
+						<option style="width: 500px" value="FILELEVEL">FileLevel</option>
+						<option style="width: 500px" value="RECORDLEVEL">RecordLevel</option>
+					</select>
+				</div>
+			</form>
+			<br>
+			
+			<form action="NewUser.html" >
+			 <button class="dropbtn1">NEW ENTRY</button>	    
+			</form>
+		</div>
+	</div>
+</body>
+</html>
